@@ -7,6 +7,7 @@ import java.time.format.DateTimeFormatter;
 public class Persona {
     // Atributos
     private String nombre;
+    private String apellido;
     private Integer edad;
     private String sexo;
     private LocalDate fechaNacimiento;
@@ -24,8 +25,9 @@ public class Persona {
     * @param fechaNacimiento de la persona
     * @param esAdulto se obtiene en base a la fecha de nacimiento
     */
-    public Persona(String nombre, String sexo, String fechaNacimiento) {
+    public Persona(String nombre, String apellido, String sexo, String fechaNacimiento) {
         this.nombre = nombre;
+        this.apellido = apellido;
         this.edad = calcularEdad(fechaNacimiento);
         this.sexo = sexo;
         this.fechaNacimiento = LocalDate.parse(fechaNacimiento, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
