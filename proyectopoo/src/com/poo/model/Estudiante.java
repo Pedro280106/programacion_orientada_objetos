@@ -9,8 +9,8 @@ public class Estudiante extends Persona{
     private double promedio;
     
     // Contructor
-    public Estudiante(String nombre, String sexo, String fechaNacimiento, String escuela, String curso, int tetramestre, int matricula) {
-        super(nombre, sexo, fechaNacimiento);
+    public Estudiante(String nombre, String apellido, String sexo, String fechaNacimiento, String escuela, String curso, int tetramestre, int matricula) {
+        super(nombre, apellido, sexo, fechaNacimiento);
         this.escuela = escuela;
         this.curso = curso;
         this.tetramestre = tetramestre;

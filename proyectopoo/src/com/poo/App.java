@@ -15,18 +15,18 @@ import com.poo.service.impl.EstudianteServiceImpl;
 public class App {
     public static void main(String[] args) throws Exception {
 
-       /* IEstudianteService iEstudianteService = new EstudianteServiceImpl(); */
+       IEstudianteService iEstudianteService = new EstudianteServiceImpl();
        
        /*  Persona persona = new Persona("Pedro", "Masculino", "2006-01-28");
        System.out.println(persona); */
 
-       /* Estudiante estudiante = new Estudiante("Pedro", "Masculino", "2006-01-28", "ceduk", "Ingeneria en sistemas", 4, 9569);
+       Estudiante estudiante = new Estudiante("Pedro","delgado", "Masculino", "2003-01-28", "ceduk", "Ingeneria en sistemas", 4, 9569);
 
        List<Materia> materias = new ArrayList<Materia>();
 
-       Materia matematicas = new Materia("Matematicas", 9.0);
-       Materia espanol = new Materia("Español", 8.0);
-       Materia ingles = new Materia("Ingles", 7.7);
+       Materia matematicas = new Materia("Matematicas", 8.0);
+       Materia espanol = new Materia("Español", 7.0);
+       Materia ingles = new Materia("Ingles", 6.7);
        
        materias.add(matematicas);
        materias.add(espanol);
@@ -34,7 +34,7 @@ public class App {
 
        estudiante.setPromedio(iEstudianteService.promedioFinal(materias));
        
-       System.out.println(estudiante); */
+       System.out.println(estudiante); 
 
        /* String texto = JOptionPane.showInputDialog("Introduce un tamaño para el arrey");
        int tamanio = Integer.parseInt(texto);
@@ -51,14 +51,14 @@ public class App {
         System.out.println(listaPasswords[i].getContrasenia() + " " + fortalezaPassword[i]);
        } */
 
-       String nombre = JOptionPane.showInputDialog("Cual es su nombre?");
+       /* String nombre = JOptionPane.showInputDialog("Cual es su nombre?");
        String apellido = JOptionPane.showInputDialog("Cual es su apellido?");
        String compania = JOptionPane.showInputDialog("A que compañia perteneces");
 
        Password password = new Password(12);
        Correo correo = new Correo(nombre, apellido, compania, password.getContrasenia());
 
-       System.out.println(correo);
+       System.out.println(correo); */
        
     }
     
